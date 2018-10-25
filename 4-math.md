@@ -19,8 +19,7 @@ circle(5);
 
 ```javascript
 function random(min, max){
-  randomNum = Math.floor(Math.random() * (max - min)) + min;
-  return randomNum;
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
 random(1, 7) 
@@ -29,6 +28,7 @@ random(1, 7)
 ### 문제 3
 
 정수를 입력받아, 5 단위로 올림한 수를 반환하는 함수를 작성하세요.
+*blog 
 
 예:
 ```
@@ -37,13 +37,14 @@ ceilBy5(37); -> 40
 ```
 ```javascript
 function ceilBy5(input){
-  return Math.ceil(input / 5) * 5
+  return Math.ceil(input / 5) * 5 //10단위로 올림하고싶으면 /10 *10 , 5단위로 반올림하고싶으면 round
 }
 ceilBy5(32);
 ```
 
 
-### 문제 4
+
+### 문제 4 ??
 
 배열을 입력받아, 요소들의 순서를 뒤섞은 새 배열을 반환하는 함수를 작성하세요.
 ```javascript
@@ -65,7 +66,7 @@ shuffle([1, 2, 3, 4, 5]);
 임의의 HTML 색상 코드를 반환하는 함수를 작성하세요.
 ```javascript
 function randomColor(){
-  return "#" + Math.random().toString(16).slice(2, 8);
+  return "#" + Math.random().toString(16).slice(2, 8);0
 }
 ```
 
